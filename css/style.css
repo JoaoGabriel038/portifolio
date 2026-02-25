@@ -40,8 +40,10 @@ button:hover {
 /* Cabeçalho */
 
 header {
-    background-color: var(--Amarelo);
+    background-color: transparent;
     padding: 16px 0;
+    position: fixed;
+    width: 100%;
 }
 
 header > .interface {
@@ -81,6 +83,7 @@ header nav.menu-desktop button{
 
 section.hero {
     background-image: linear-gradient(to left, var(--Azul) 70%, var(--Amarelo) 30%);
+    padding-top: 144px;
 }
 
 .hero > .interface {
@@ -89,11 +92,14 @@ section.hero {
     gap: 120px;
 }
 
+.hero .img-hero {
+    line-height: 0;
+}
+
 .hero .txt-hero h1{
     font-size: 3rem;
     color: var(--Branco);
     font-weight: 300;
-    font-weight: 800;
 }
 
 .hero .txt-hero h1 span{
@@ -101,4 +107,16 @@ section.hero {
     display: block;
     font-weight: 800;
     font-size: 4rem;
+}
+
+.hero .txt-hero p{
+    color:var(--Branco);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 24px 0;
+}
+
+.hero .txt-hero button {
+    width: 200px;
+    height: 48px;
 }
