@@ -11,9 +11,19 @@
     --Amarelo: #171b26;
     --Azul: #0b8090;
     --Branco: #FFF;
+    --AzulEscuro: #0b5863;
+    --Cinza: #8d8d8d;
 }
 
 /* Interface Geral */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--AzulEscuro);
+}
 
 .interface {
     max-width: 1380px;
@@ -35,6 +45,15 @@ button:hover {
     color: var(--Azul);
     scale: 1.1;
 
+}
+
+h1.titulo-section{
+    font-size: 4rem;
+    color: var(--Branco);
+}
+
+h1.titulo-section span {
+    color: var(--Amarelo);
 }
 
 /* Cabeçalho */
@@ -119,4 +138,31 @@ section.hero {
 .hero .txt-hero button {
     width: 200px;
     height: 48px;
+}
+
+/* estilo sobre mim */
+
+section.sobre-mim{
+    padding: 80px 0;
+}
+
+.sobre-mim > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 96px;
+}
+
+.sobre-mim .txt-sobre p{
+    color: var(--Cinza);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+.sobre-mim .btn-redes button{
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    margin-right: 8px;
 }
