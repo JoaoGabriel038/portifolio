@@ -63,6 +63,7 @@ header {
     padding: 16px 0;
     position: fixed;
     width: 100%;
+    background-image: linear-gradient(to top, var(--AzulEscuro) 0%, var(--Azul) 100%);
 }
 
 header > .interface {
@@ -160,9 +161,126 @@ section.sobre-mim{
     margin: 24px 0;
 }
 
-.sobre-mim .btn-redes button{
+.sobre-mim .btn-redes button, footer .btn-redes button{
     width: 56px;
     height: 56px;
     font-size: 24px;
     margin-right: 8px;
+}
+
+/* habilidades */
+
+section.skills{
+    background-color: var(--Azul);
+    padding: 80px 0;
+}
+
+.skills article{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.skills .box-skills{
+    background-color: var(--AzulEscuro);
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.box-skills .icon-skills{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 16px;
+}
+
+.box-skills .icon-skills img{
+    max-width: 80px;
+}
+
+.icon-skills h2{
+    color: var(--Branco);
+
+}
+
+.icon-skills h2 span{
+    color: var(--Amarelo);
+}
+
+.box-skills p{
+    color: var(--Branco);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.skills .btn-contato{
+    text-align: center;
+}
+
+.skills .btn-contato button{
+    width: 200px;
+    height: 48px;
+}
+
+/* contatos */
+
+section.contato {
+    padding: 80px 0;
+    background-color: var(--AzulEscuro);
+}
+
+.contato > .interface {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato .txt-contato p {
+    color: var(--Branco);
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0;
+
+}
+
+.contato .txt-contato p i{
+    color: var(--Amarelo);
+    font-size: 3rem;
+    
+}
+
+.contato .txt-contato {
+    text-align: center;
+}
+
+.contato .txt-contato button{
+    display: flex;
+    align-items: center;
+    width: 336px;
+    height: 86px;
+    font-size: 48px;
+    margin-right: 8px;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+/* rodapé */
+
+footer {
+    padding: 40px 0;
+    background-color: var(--Azul);
+}
+
+footer > .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Cinza);
+}
+
+footer .logo-footer img{
+    max-width: 160px;
+    margin-bottom: 16px;
 }
