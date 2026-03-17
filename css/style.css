@@ -12,6 +12,7 @@
     --Azul: #0b8090;
     --Branco: #FFF;
     --AzulEscuro: #0b5863;
+    --AzulEscuro2: #0e7988;
     --Cinza: #8d8d8d;
 }
 
@@ -63,7 +64,7 @@ header {
     padding: 16px 0;
     position: fixed;
     width: 100%;
-    background-image: linear-gradient(to top, var(--AzulEscuro) 0%, var(--Azul) 100%);
+    background-image: linear-gradient(to top, var(--AzulEscuro2) 0%, var(--Azul) 100%);
 }
 
 header > .interface {
@@ -251,19 +252,20 @@ section.contato {
     
 }
 
-.contato .txt-contato {
+.contato .btn-contato {
     text-align: center;
 }
 
-.contato .txt-contato button{
+.contato .btn-contato button{
     display: flex;
-    align-items: center;
     width: 336px;
     height: 86px;
     font-size: 48px;
-    margin-right: 8px;
+    margin-top: 42px;
+    margin-right: 150px;
     justify-content: space-between;
-    padding: 16px;
+    padding: 16px 32px;
+    align-items: center;
 }
 
 /* rodapé */
