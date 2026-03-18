@@ -64,7 +64,7 @@ header {
     padding: 16px 0;
     position: fixed;
     width: 100%;
-    background-image: linear-gradient(to top, var(--AzulEscuro2) 0%, var(--Azul) 100%);
+    /* background-image: linear-gradient(to top, var(--AzulEscuro2) 0%, var(--Azul) 100%); */
 }
 
 header > .interface {
@@ -156,7 +156,7 @@ section.sobre-mim{
 }
 
 .sobre-mim .txt-sobre p{
-    color: var(--Cinza);
+    color: var(--Branco);
     text-align: justify;
     line-height: 1.6;
     margin: 24px 0;
