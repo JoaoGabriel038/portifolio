@@ -60,11 +60,11 @@ h1.titulo-section span {
 /* Cabeçalho */
 
 header {
-    background-color: transparent;
     padding: 16px 0;
     position: fixed;
     width: 100%;
-    /* background-image: linear-gradient(to top, var(--AzulEscuro2) 0%, var(--Azul) 100%); */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to top, var(--AzulEscuro2) 0%, var(--Azul) 100%); */
 }
 
 header > .interface {
@@ -278,7 +278,6 @@ section.portfolio{
     font-weight: 600;
 
     opacity: 0;
-    transition: 0.3s;
 }
 
 .portfolio-container .portfolio-box .info-portfolio:hover{
@@ -290,11 +289,13 @@ section.portfolio{
 }
 
 .portfolio-container .projeto1{
-    background-image: url();
+    background-image: url(../assets/spring.webp);
+    transition: 3s;
 }
 
 .portfolio-container .projeto2{
-    background-image: url();
+    background-image: url(../assets/portifolio.webp);
+        transition: 2s;
 }
 
 
@@ -371,4 +372,35 @@ footer .logo-footer img{
     100% {
         top: 30px;
     }
+}
+
+/* teste */
+
+
+.efeito-txt-topo{
+    visibility: hidden;
+}
+
+.txt-sobre{
+    visibility: hidden;
+}
+
+.titulo-section{
+    visibility: hidden;
+}
+
+.box1{
+    visibility: hidden;
+}
+
+.box2{
+    visibility: hidden;
+}
+
+.box3{
+    visibility: hidden;
+}
+
+.box4{
+    visibility: hidden;
 }
