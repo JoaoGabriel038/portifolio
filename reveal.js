@@ -38,3 +38,9 @@ revelar.reveal('.box4', {
     distance: '90px',
     delay: 1400
 })
+
+revelar.reveal('.img-sobre', {
+    duration: 2000,
+    distance: '90px',
+    delay: 200
+})
