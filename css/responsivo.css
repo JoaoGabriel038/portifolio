@@ -1,0 +1,250 @@
+@media (max-width: 1000px) {
+
+    /* header */
+    .menu-desktop {
+        display: none;
+    }
+
+    /* hero */
+
+    section.hero {
+        background: linear-gradient(to top, var(--Azul) 60%, var(--Amarelo));
+    }
+
+    .hero>.interface {
+        text-align: center;
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 0;
+        gap: 0;
+    }
+
+    .hero .img-hero img{
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .hero .txt-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .txt-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero .txt-hero h1 span {
+        font-size: 1.6rem;
+    }
+
+    .hero .txt-hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero .txt-hero button {
+        width: 130px;
+        height: 54px;
+        border: solid 1px;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .hero .txt-hero .button2 {
+        width: 130px;
+        font-size: 14px;
+    }
+
+    .hero .txt-hero span {
+        margin-right: 0px;
+    }
+
+    .hero .stats-item {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .hero .stats-number {
+        font-size: 1.rem;
+    }
+
+    .hero .stats-text {
+        font-size: 0.8rem;
+    }
+
+    /* menu mobile */
+
+    .btn-menu-mobile .menu-mobile {
+        display: block;
+    }
+
+    /* sobre mim */
+
+    section.sobre-mim {
+        padding: 1s0 0;
+        margin-bottom: 0;
+    }
+
+    .sobre-mim>.interface {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .sobre-mim .txt-sobre h1 {
+        font-size: 1.8rem;
+    }
+
+    .sobre-mim .txt-sobre p {
+        font-size: 0.8rem;
+    }
+
+    .sobre-mim .img-sobre img {
+        display: none;
+    }
+
+    .sobre-mim .btn-redes button,
+    footer .btn-redes button {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    /* skill */
+
+    section.skills {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        align-items: center;
+    }
+
+    .skills article {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+        align-items: center;
+    }
+
+    .skills h1 {
+        font-size: 2.0rem;
+    }
+
+    .box-skills h2 {
+        font-size: 1.2rem;
+    }
+
+    .box-skills p {
+        font-size: 0.8rem;
+    }
+
+    .box-skills {
+        max-width: 310px;
+        text-align: center;
+    }
+
+    .icon-skills {
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* portfolio */
+
+    section.portfolio {
+        padding: 40px 0;
+    }
+
+    .portfolio p {
+        margin: 16px 0 32px 0;
+    }
+
+    .portfolio .portfolio-container {
+        grid-template: 1fr 1fr 1fr / 1fr;
+        gap: 24px;
+    }
+
+    .portfolio h1 {
+        font-size: 1.4rem;
+    }
+
+    .portfolio-container .portfolio-box {
+        height: 300px;
+    }
+
+
+    /* contato */
+
+    section.contato {
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato .txt-contato h1 {
+        font-size: 1.4rem;
+    }
+
+    .contato .txt-contato p {
+        align-items: center;
+        gap: 16px;
+        margin: 16px 0;
+        text-align: justify;
+
+    }
+
+    .contato h1 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .contato p {
+        margin-bottom: 20px;
+    }
+
+    .contato2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contato3 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+
+    .contatos h1 {
+        font-size: 1.3rem;
+    }
+
+    .contatos p {
+        margin-bottom: 5px;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 20px 0;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    footer .logo-footer img {
+        max-width: 110px;
+    }
+
+}

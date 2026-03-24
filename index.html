@@ -4,15 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desenvolvedor Back-End especializado em Java, Python e IA. Transformando problemas complexos em soluções robustas e escaláveis.">
-    <meta name="keywords" content="Desenvolvedor Back-End, Java, Python, IA, APIs, Spring Boot, MySQL, Software Engineering">
+    <meta name="description"
+        content="Desenvolvedor Back-End especializado em Java, Python e IA. Transformando problemas complexos em soluções robustas e escaláveis.">
+    <meta name="keywords"
+        content="Desenvolvedor Back-End, Java, Python, IA, APIs, Spring Boot, MySQL, Software Engineering">
     <meta name="author" content="João Gabriel da Silva">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="reveal.js" defer></script>
+    <script src="js/reveal.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +43,21 @@
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#portfolioo">Portfólio</a></li>
                     <li><a href="#contatoo"><button>Contato</button></a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-menu-mobile" id="btn-menu-mobile">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <nav class="menu-mobile" id="menu-mobile">
+                <i class="bi bi-x"></i>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre_mim">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#portfolioo">Portfólio</a></li>
+                    <li><a href="#contatoo">Contato</a></li>
                 </ul>
             </nav>
 
@@ -242,16 +260,18 @@
 
                         <div class="contatos">
                             <h1>Informações de contato:</h1>
-                            <p><i class="bi bi-envelope-at"></i>  joaogabriel038@gmail.com</p>
+                            <p><i class="bi bi-envelope-at"></i> joaogabriel038@gmail.com</p>
                             <p><i class="bi bi-geo-alt"></i> São Caetano do Sul/SP</p>
 
                         </div>
 
                         <div class="btn-contato">
                             <h1>Menságem Rápida</h1>
-                            <p>Você pode entrar em contato comigo diretamente pelo e-mail ou linkedin.<br>Tempo de resposta aproximado: 10 minutos</p>
+                            <p>Você pode entrar em contato comigo diretamente pelo e-mail ou linkedin.<br>Tempo de
+                                resposta aproximado: 10 minutos</p>
                             <div class="disponibilidade">
-                                <p>Disponibilidade: Aberto a oportunidades de desenvolvimento back-end e projetos desafiadores.</p>
+                                <p>Disponibilidade: Aberto a oportunidades de desenvolvimento back-end e projetos
+                                    desafiadores.</p>
                             </div>
                             <a href="https://www.linkedin.com/in/joao-gabriel-da-silva-dev/" target="_blank"><button><i
                                         class="bi bi-linkedin"></i>Linkedin</button></a>
@@ -282,6 +302,7 @@
         </div>
     </footer>
 
+    <script src="js/menu_mobile.js" ></script>
 </body>
 
 </html>

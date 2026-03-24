@@ -1,4 +1,8 @@
-window.revelar = ScrollReveal({reset:true})
+window.revelar = ScrollReveal({
+    reset:false,
+    mobile: true,
+    viewFactor: 0.10
+})
 
 revelar.reveal('.efeito-txt-topo', {
     duration: 2000,
@@ -18,25 +22,24 @@ revelar.reveal('.titulo-section', {
 revelar.reveal('.box1', {
     duration: 1000,
     distance: '90px',
-    delay: 500
+
 })
 
 revelar.reveal('.box2', {
     duration: 1000,
     distance: '90px',
-    delay: 800
+
 })
 
 revelar.reveal('.box3', {
     duration: 1000,
     distance: '90px',
-    delay: 1100
+
 })
 
 revelar.reveal('.box4', {
     duration: 1000,
     distance: '90px',
-    delay: 1400
 })
 
 revelar.reveal('.img-sobre', {
