@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Plus Jakarta Sans", sans-serif;
+    text-decoration: none;
 }
 
 :root {
@@ -13,7 +14,8 @@
     --Branco: #FFF;
     --AzulEscuro: #0b5863;
     --AzulEscuro2: #0e7988;
-    --Cinza: #8d8d8d;
+    --Cinza: #c9c9c9f1;
+    --CinzaEscuro: #969696bd;
 }
 
 /* Interface Geral */
@@ -153,7 +155,7 @@ section.hero {
 
 
 .hero .txt-hero p{
-    color:var(--Branco);
+    color:var(--Cinza);
     line-height: 1.6;
     font-size: 1.4rem;
     margin: 12px 0;
@@ -161,7 +163,26 @@ section.hero {
 
 .hero .txt-hero button {
     width: 200px;
-    height: 48px;
+    height: 54px;
+    border: solid 1px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.hero .txt-hero .button2 {
+    width: 200px;
+    height: 54px;
+    border: solid 1px var(--Amarelo);
+    justify-content: center;
+    font-size: 20px;
+    background-color: var(--Amarelo);
+    color: var(--Azul);
+    box-shadow: 0 0 10px rgba(0, 123, 145, 0.5)
+}
+
+.hero .txt-hero span {
+    font-weight: 800;
+    margin-right: 8px;
 }
 
 .hero .stats-container {
@@ -171,6 +192,7 @@ section.hero {
     padding: 10px;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .hero .stats-item{
@@ -183,6 +205,14 @@ section.hero {
     max-height: 140px;
     flex: 1;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0,1);
+}
+
+.hero .botoes-hero {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
 }
 
 .hero .stats-number {
@@ -213,7 +243,7 @@ section.sobre-mim{
 }
 
 .sobre-mim .txt-sobre p{
-    color: var(--Branco);
+    color: var(--Cinza);
     text-align: justify;
     line-height: 1.6;
     margin: 24px 0;
@@ -268,7 +298,7 @@ section.skills{
 }
 
 .box-skills p{
-    color: var(--Branco);
+    color: var(--Cinza);
     text-align: justify;
     line-height: 1.6;
 }
@@ -289,7 +319,7 @@ section.portfolio{
 }
 
 .portfolio p{
-    color: var(--Branco);
+    color: var(--Cinza);
     margin: 16px 0 48px 0;
 }
 
@@ -341,12 +371,12 @@ section.portfolio{
 }
 
 .portfolio-container .projeto1{
-    background-image: url(../assets/spring.webp);
-    transition: 3s;
+    background-image: url(../assets/itau.webp);
+    transition: 2s;
 }
 
 .portfolio-container .projeto2{
-    background-image: url(../assets/portifolio.webp);
+    background-image: url(../assets/spring.webp);
         transition: 2s;
 }
 
@@ -365,12 +395,23 @@ section.contato {
 
 .contato > .interface {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato .txt-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato .txt-contato h1 {
+    font-size: 3rem;
 }
 
 .contato .txt-contato p {
-    color: var(--Branco);
-    font-size: 1.9rem;
+    color: var(--Cinza);
+    font-size: 1.0rem;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -386,19 +427,90 @@ section.contato {
 
 .contato .btn-contato {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 380px;
+    width: 400px;
+    border: solid 1px var(--Cinza);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: justify;
+    background-color: var(--AzulEscuro);
+    color: var(--Cinza);
 }
+
+.contato h1 {
+    font-size: 1.3rem;
+    color: var(--Branco);
+    margin-bottom: 10px;
+}
+
+.contato p{
+    margin-bottom: 20px;
+}
+
 
 .contato .btn-contato button{
     display: flex;
-    width: 336px;
-    height: 86px;
-    font-size: 48px;
-    margin-top: 42px;
-    margin-right: 150px;
+    width: 186px;
+    height: 66px;
+    font-size: 28px;
     justify-content: space-between;
-    padding: 16px 32px;
-    align-items: center;
+    padding: 16px 16px;
+    align-items: center;    
 }
+
+.contato2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contato3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: var(--AzulEscuro);
+    border: solid 1px var(--Cinza);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: var(--Cinza);
+    height: 200px;
+    width: 400px;
+}
+
+.contatos h1 {
+    font-size: 1.3rem;
+    color: var(--Branco);
+    margin-bottom: 30px;
+}
+
+.contatos p {
+    margin-bottom: 5px;
+}
+
+.disponibilidade {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    padding: 10px;
+    border: solid 1px var(--Cinza);
+    background-color: var(--Amarelo);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 
 /* rodapé */
 
